@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.game-layout {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  max-width: 350px;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .game-layout {
+    flex-direction: column;
+  }
+
+  .right-panel {
+    max-width: 100%;
+    flex-direction: row;
+  }
+
+  .right-panel > * {
+    flex: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .right-panel {
+    flex-direction: column;
+  }
+}
