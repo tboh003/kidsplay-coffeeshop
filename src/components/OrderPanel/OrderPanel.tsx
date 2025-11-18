@@ -9,8 +9,6 @@ interface OrderPanelProps {
 }
 
 export const OrderPanel: React.FC<OrderPanelProps> = ({ order, onRemoveProduct }) => {
-  const total = order.reduce((sum, product) => sum + product.price, 0);
-
   return (
     <div className="order-panel">
       <div className="order-title">{LANGUAGE.ORDER_TITLE}</div>
@@ -29,10 +27,6 @@ export const OrderPanel: React.FC<OrderPanelProps> = ({ order, onRemoveProduct }
             </div>
           ))
         )}
-      </div>
-      <div className="order-total">
-        <div className="total-label">{LANGUAGE.CHECKOUT_TOTAL}:</div>
-        <div className="total-amount">{total} {LANGUAGE.CURRENCY}</div>
       </div>
     </div>
   );
