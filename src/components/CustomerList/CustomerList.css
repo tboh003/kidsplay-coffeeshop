@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   padding: clamp(10px, 2vh, 20px) clamp(5px, 1vw, 10px);
+  padding-bottom: calc(clamp(10px, 2vh, 20px) + env(safe-area-inset-bottom));
   background-color: #fff3e0;
   border-right: clamp(2px, 0.3vw, 3px) solid #ff9800;
   min-width: clamp(80px, 10vw, 120px);

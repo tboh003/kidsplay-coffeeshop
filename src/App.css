@@ -14,14 +14,15 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  height: 100dvh; /* Dynamic viewport height for mobile/tablet */
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding-bottom: env(safe-area-inset-bottom); /* Respect system UI */
 }
 
 .game-layout {
   display: flex;
   flex: 1;
   overflow: hidden;
-  height: 100vh;
 }
 
 .right-panel {
