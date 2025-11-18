@@ -1,5 +1,6 @@
 import React from 'react';
 import { Customer } from '../../types';
+import { LANGUAGE } from '../../constants/language';
 import './CustomerList.css';
 
 interface CustomerListProps {
@@ -21,7 +22,7 @@ export const CustomerList: React.FC<CustomerListProps> = ({
 
   return (
     <div className="customer-list">
-      <div className="customer-list-title">Customers</div>
+      <div className="customer-list-title">{LANGUAGE.CUSTOMERS_TITLE}</div>
       <div className="customer-items-container">
         {customers.map((customer) => (
           <div

@@ -1,5 +1,6 @@
 import React from 'react';
 import { availableCustomerIcons } from '../../data/customers';
+import { LANGUAGE } from '../../constants/language';
 import './CustomerSelector.css';
 
 interface CustomerSelectorProps {
@@ -16,7 +17,7 @@ export const CustomerSelector: React.FC<CustomerSelectorProps> = ({ onSelectIcon
   return (
     <div className="customer-selector-overlay" onClick={onClose}>
       <div className="customer-selector-modal" onClick={(e) => e.stopPropagation()}>
-        <h2>Choose a Customer</h2>
+        <h2>{LANGUAGE.CUSTOMER_SELECTOR_TITLE}</h2>
         <div className="customer-icon-grid">
           {availableCustomerIcons.map((customer) => (
             <button
@@ -30,7 +31,7 @@ export const CustomerSelector: React.FC<CustomerSelectorProps> = ({ onSelectIcon
           ))}
         </div>
         <button className="close-button" onClick={onClose}>
-          Cancel
+          {LANGUAGE.CUSTOMER_SELECTOR_CANCEL}
         </button>
       </div>
     </div>

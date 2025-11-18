@@ -1,5 +1,6 @@
 import React from 'react';
 import { Product } from '../../types';
+import { LANGUAGE } from '../../constants/language';
 import './OrderPanel.css';
 
 interface OrderPanelProps {
@@ -12,10 +13,10 @@ export const OrderPanel: React.FC<OrderPanelProps> = ({ order, onRemoveProduct }
 
   return (
     <div className="order-panel">
-      <div className="order-title">Current Order</div>
+      <div className="order-title">{LANGUAGE.ORDER_TITLE}</div>
       <div className="order-items">
         {order.length === 0 ? (
-          <div className="empty-order">No items yet</div>
+          <div className="empty-order">{LANGUAGE.ORDER_EMPTY}</div>
         ) : (
           order.map((product, index) => (
             <div
@@ -24,14 +25,14 @@ export const OrderPanel: React.FC<OrderPanelProps> = ({ order, onRemoveProduct }
               onClick={() => onRemoveProduct(index)}
             >
               <span className="order-item-icon">{product.icon}</span>
-              <span className="order-item-price">{product.price} Kč</span>
+              <span className="order-item-price">{product.price} {LANGUAGE.CURRENCY}</span>
             </div>
           ))
         )}
       </div>
       <div className="order-total">
-        <div className="total-label">Total:</div>
-        <div className="total-amount">{total} Kč</div>
+        <div className="total-label">{LANGUAGE.CHECKOUT_TOTAL}:</div>
+        <div className="total-amount">{total} {LANGUAGE.CURRENCY}</div>
       </div>
     </div>
   );

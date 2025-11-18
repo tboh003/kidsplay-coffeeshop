@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { LANGUAGE } from '../../constants/language';
 import './CheckoutCounter.css';
 
 interface CheckoutCounterProps {
@@ -49,17 +50,17 @@ export const CheckoutCounter: React.FC<CheckoutCounterProps> = ({
 
   return (
     <div className="checkout-counter">
-      <div className="counter-title">Checkout</div>
+      <div className="counter-title">{LANGUAGE.CHECKOUT_TOTAL}</div>
       
       <div className={`display ${feedback}`}>
-        {input || '0'} Kč
+        {input || '0'} {LANGUAGE.CURRENCY}
       </div>
 
       {feedback === 'success' && (
-        <div className="feedback success">✓ Correct!</div>
+        <div className="feedback success">✓ {LANGUAGE.SUCCESS}</div>
       )}
       {feedback === 'error' && (
-        <div className="feedback error">✗ Try Again</div>
+        <div className="feedback error">✗ {LANGUAGE.TRY_AGAIN}</div>
       )}
 
       <div className="number-pad">
@@ -76,7 +77,7 @@ export const CheckoutCounter: React.FC<CheckoutCounterProps> = ({
           0
         </button>
         <button className="action-button clear" onClick={handleClear}>
-          CLR
+          {LANGUAGE.CHECKOUT_CLEAR}
         </button>
         <button className="action-button check" onClick={handleCheck}>
           ✓
