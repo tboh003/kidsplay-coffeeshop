@@ -23,11 +23,11 @@
 
 .customer-selector-modal {
   background: white;
-  border-radius: 20px;
-  padding: 30px;
-  max-width: 500px;
+  border-radius: clamp(12px, 2vw, 20px);
+  padding: clamp(20px, 3vw, 30px);
+  max-width: clamp(350px, 50vw, 500px);
   width: 90%;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 clamp(6px, 1vh, 10px) clamp(30px, 4vh, 40px) rgba(0, 0, 0, 0.3);
   animation: slideUp 0.3s ease-out;
 }
 
@@ -43,31 +43,31 @@
 }
 
 .customer-selector-modal h2 {
-  margin: 0 0 20px 0;
-  font-size: 28px;
+  margin: 0 0 clamp(12px, 2vh, 20px) 0;
+  font-size: clamp(20px, 2.8vw, 28px);
   color: #333;
   text-align: center;
 }
 
 .customer-icon-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 15px;
-  margin-bottom: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(clamp(80px, 10vw, 100px), 1fr));
+  gap: clamp(10px, 1.5vw, 15px);
+  margin-bottom: clamp(12px, 2vh, 20px);
 }
 
 .customer-icon-button {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border: none;
-  border-radius: 15px;
-  padding: 20px;
+  border-radius: clamp(10px, 1.5vw, 15px);
+  padding: clamp(15px, 2vw, 20px);
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: clamp(6px, 1vw, 10px);
   transition: all 0.2s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 clamp(3px, 0.4vh, 4px) clamp(5px, 0.6vh, 6px) rgba(0, 0, 0, 0.1);
 }
 
 .customer-icon-button:hover {
@@ -80,13 +80,13 @@
 }
 
 .customer-icon-large {
-  font-size: 48px;
+  font-size: clamp(36px, 4.8vw, 48px);
   line-height: 1;
 }
 
 .customer-icon-name {
   color: white;
-  font-size: 14px;
+  font-size: clamp(11px, 1.4vw, 14px);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -96,9 +96,9 @@
   width: 100%;
   background: #e0e0e0;
   border: none;
-  border-radius: 10px;
-  padding: 15px;
-  font-size: 16px;
+  border-radius: clamp(8px, 1vw, 10px);
+  padding: clamp(12px, 1.5vh, 15px);
+  font-size: clamp(14px, 1.6vw, 16px);
   font-weight: 600;
   cursor: pointer;
   color: #666;

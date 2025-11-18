@@ -1,19 +1,19 @@
 .order-panel {
   display: flex;
   flex-direction: column;
-  padding: 16px;
+  padding: clamp(10px, 1.6vh, 16px);
   background-color: #f3e5f5;
-  border-bottom: 3px solid #9c27b0;
-  min-height: 400px;
+  border-bottom: clamp(2px, 0.3vw, 3px) solid #9c27b0;
+  min-height: clamp(250px, 35vh, 400px);
   flex: 1;
 }
 
 .order-title {
-  font-size: 18px;
+  font-size: clamp(14px, 1.8vw, 18px);
   font-weight: bold;
   text-align: center;
   color: #6a1b9a;
-  margin-bottom: 12px;
+  margin-bottom: clamp(8px, 1.2vh, 12px);
 }
 
 .order-items {
@@ -21,15 +21,15 @@
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  margin-bottom: 12px;
-  min-height: 150px;
+  gap: clamp(4px, 0.6vh, 6px);
+  margin-bottom: clamp(8px, 1.2vh, 12px);
+  min-height: clamp(100px, 15vh, 150px);
 }
 
 .empty-order {
   text-align: center;
   color: #9c27b0;
-  padding: 20px;
+  padding: clamp(12px, 2vh, 20px);
   font-style: italic;
 }
 
@@ -37,13 +37,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 12px;
+  padding: clamp(6px, 0.8vh, 8px) clamp(8px, 1.2vw, 12px);
   background-color: #e1bee7;
-  border-radius: 6px;
+  border-radius: clamp(4px, 0.6vw, 6px);
   cursor: pointer;
   transition: all 0.2s;
-  border: 2px solid #ba68c8;
-  min-height: 44px;
+  border: clamp(1px, 0.2vw, 2px) solid #ba68c8;
+  min-height: clamp(36px, 4.4vh, 44px);
 }
 
 .order-item:hover {
@@ -52,12 +52,12 @@
 }
 
 .order-item-icon {
-  font-size: 24px;
+  font-size: clamp(18px, 2.4vw, 24px);
   user-select: none;
 }
 
 .order-item-price {
-  font-size: 14px;
+  font-size: clamp(12px, 1.4vw, 14px);
   font-weight: bold;
   color: #4a148c;
 }
@@ -66,20 +66,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px;
+  padding: clamp(8px, 1.2vw, 12px);
   background-color: #ba68c8;
-  border-radius: 8px;
+  border-radius: clamp(6px, 0.8vw, 8px);
   margin-top: auto;
 }
 
 .total-label {
-  font-size: 18px;
+  font-size: clamp(14px, 1.8vw, 18px);
   font-weight: bold;
   color: white;
 }
 
 .total-amount {
-  font-size: 24px;
+  font-size: clamp(18px, 2.4vw, 24px);
   font-weight: bold;
   color: white;
 }

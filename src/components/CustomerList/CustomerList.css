@@ -1,25 +1,25 @@
 .customer-list {
   display: flex;
   flex-direction: column;
-  padding: 20px 10px;
+  padding: clamp(10px, 2vh, 20px) clamp(5px, 1vw, 10px);
   background-color: #fff3e0;
-  border-right: 3px solid #ff9800;
-  min-width: 100px;
+  border-right: clamp(2px, 0.3vw, 3px) solid #ff9800;
+  min-width: clamp(80px, 10vw, 120px);
   height: 100%;
 }
 
 .customer-list-title {
-  font-size: 14px;
+  font-size: clamp(12px, 1.2vw, 14px);
   font-weight: bold;
   text-align: center;
   color: #e65100;
-  margin-bottom: 8px;
+  margin-bottom: clamp(4px, 0.8vh, 8px);
 }
 
 .customer-items-container {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: clamp(8px, 1.2vh, 12px);
   flex: 1;
 }
 
@@ -27,13 +27,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80px;
-  height: 80px;
+  width: clamp(60px, 8vw, 80px);
+  height: clamp(60px, 8vw, 80px);
   background-color: #ffe0b2;
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.2s;
-  border: 3px solid transparent;
+  border: clamp(2px, 0.3vw, 3px) solid transparent;
 }
 
 .customer-item:hover {
@@ -48,7 +48,7 @@
 }
 
 .customer-icon {
-  font-size: 40px;
+  font-size: clamp(30px, 4vw, 40px);
   user-select: none;
 }
 
@@ -56,15 +56,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80px;
-  height: 80px;
+  width: clamp(60px, 8vw, 80px);
+  height: clamp(60px, 8vw, 80px);
   background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
-  border: 3px dashed #2e7d32;
+  border: clamp(2px, 0.3vw, 3px) dashed #2e7d32;
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.3s;
   margin-top: auto;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 clamp(3px, 0.4vh, 4px) clamp(5px, 0.6vh, 6px) rgba(0, 0, 0, 0.1);
 }
 
 .add-customer-button:hover {
@@ -78,7 +78,7 @@
 }
 
 .add-icon {
-  font-size: 48px;
+  font-size: clamp(36px, 4.8vw, 48px);
   color: white;
   font-weight: bold;
   line-height: 1;
