@@ -5,18 +5,19 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--font-main);
   overflow: hidden;
-  font-size: clamp(12px, 1.5vw, 16px);
+  font-size: clamp(14px, 1.5vw, 18px);
+  color: var(--text-main);
+  background: var(--bg-gradient);
 }
 
 .app {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  height: 100dvh; /* Dynamic viewport height for mobile/tablet */
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  padding-bottom: env(safe-area-inset-bottom); /* Respect system UI */
+  height: 100dvh;
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 .game-layout {

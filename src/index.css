@@ -1,10 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
 :root {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Brand Colors */
+  --primary: #6C5CE7;
+  --primary-light: #A29BFE;
+  --secondary: #00CEC9;
+  --accent: #FD79A8;
+
+  /* Backgrounds */
+  --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+  /* Text */
+  --text-main: #2D3436;
+  --text-light: #636E72;
+  --text-white: #FFFFFF;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  /* Font */
+  --font-main: 'Outfit', sans-serif;
+
+  font-family: var(--font-main);
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light;
-  
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
