@@ -7,7 +7,9 @@ export const availableCustomerIcons = [
   { icon: '👧', name: LANGUAGE.CUSTOMER_GIRL },
   { icon: '🧒', name: LANGUAGE.CUSTOMER_CHILD },
   { icon: '🐶', name: LANGUAGE.CUSTOMER_DOG },
-  { icon: '👶', name: LANGUAGE.CUSTOMER_BABY }
+  { icon: '👶', name: LANGUAGE.CUSTOMER_BABY },
+  { icon: '👵', name: LANGUAGE.CUSTOMER_GRANDMA },
+  { icon: '👴', name: LANGUAGE.CUSTOMER_GRANDPA }
 ];
 
 // No initial customers - game starts with empty list

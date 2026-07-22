@@ -51,6 +51,8 @@ export const products: Product[] = [
   { id: 'p31', icon: '🎂', price: 1, category: LANGUAGE.CATEGORY_SWEETS, name: 'Narozeninový dort' },
   { id: 'p36', icon: '🍮', price: 1, category: LANGUAGE.CATEGORY_SWEETS, name: 'Pudink' },
   { id: 'p37', icon: '🥧', price: 1, category: LANGUAGE.CATEGORY_SWEETS, name: 'Štrúdl' },
-  { id: 'p38', icon: '🧁', price: 1, category: LANGUAGE.CATEGORY_SWEETS, name: 'Věnec' }
+  { id: 'p38', icon: '🧁', price: 1, category: LANGUAGE.CATEGORY_SWEETS, name: 'Věnec' },
+  { id: 'p44', icon: '/icons/makronka.png', price: 2, category: LANGUAGE.CATEGORY_SWEETS, name: 'Makronka' },
+  { id: 'p45', icon: '/icons/trubicka.png', price: 2, category: LANGUAGE.CATEGORY_SWEETS, name: 'Trubička' }
 ];
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Product } from '../../types';
 import { LANGUAGE } from '../../constants/language';
+import { isImageIcon } from '../../utils/icon';
 import './ProductGrid.css';
 
 interface ProductGridProps {
@@ -45,7 +46,13 @@ export const ProductGrid: React.FC<ProductGridProps> = ({ products, onProductCli
                     className="product-item"
                     onClick={() => onProductClick(product)}
                   >
-                    <div className="product-icon">{product.icon}</div>
+                    <div className="product-icon">
+                      {isImageIcon(product.icon) ? (
+                        <img src={product.icon} alt="" className="product-icon-image" />
+                      ) : (
+                        product.icon
+                      )}
+                    </div>
                     <div className="product-price">{product.price} {LANGUAGE.CURRENCY}</div>
                   </div>
                 ))}

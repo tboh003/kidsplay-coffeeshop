@@ -92,6 +92,12 @@
   transform: scale(1.1);
 }
 
+.product-icon-image {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
 .product-price {
   font-size: 14px;
   font-weight: 600;

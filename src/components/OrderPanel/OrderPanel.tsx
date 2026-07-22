@@ -1,6 +1,7 @@
 import React from 'react';
 import { Product } from '../../types';
 import { LANGUAGE } from '../../constants/language';
+import { isImageIcon } from '../../utils/icon';
 import './OrderPanel.css';
 
 interface OrderPanelProps {
@@ -22,7 +23,13 @@ export const OrderPanel: React.FC<OrderPanelProps> = ({ order, onRemoveProduct }
               className="order-item"
               onClick={() => onRemoveProduct(index)}
             >
-              <span className="order-item-icon">{product.icon}</span>
+              <span className="order-item-icon">
+                {isImageIcon(product.icon) ? (
+                  <img src={product.icon} alt="" className="order-item-icon-image" />
+                ) : (
+                  product.icon
+                )}
+              </span>
               <span className="order-item-price">{product.price} {LANGUAGE.CURRENCY}</span>
             </div>
           ))

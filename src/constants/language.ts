@@ -37,6 +37,8 @@ export const LANGUAGE = {
   CUSTOMER_CHILD: 'Dítě',
   CUSTOMER_DOG: 'Pejsek',
   CUSTOMER_BABY: 'Miminko',
+  CUSTOMER_GRANDMA: 'Babička',
+  CUSTOMER_GRANDPA: 'Dědeček',
   
   // Customer Selector
   CUSTOMER_SELECTOR_TITLE: 'Vyber zákazníka',
